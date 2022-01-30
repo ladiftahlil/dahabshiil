@@ -1,0 +1,51 @@
+.navbar {
+  background: var(--navbar-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  color: var(--navbar-foreground)
+}
+
+
+.navbar .logo img {
+  height: 55px;
+  margin-left: 1rem;
+}
+
+.user {
+  margin-right: 1rem;
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logout {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10%;
+  background: var(--navbar-color);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #f2f7fa;
+}
+
+.logout button, button:hover, button:focus {
+  outline: none;
+  background: #ff8494;
+}
+
+.navbar button {
+  color: var(--navbar-foreground);
+}
+
+.user * {
+  margin-left: 1rem;
+}
+
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
