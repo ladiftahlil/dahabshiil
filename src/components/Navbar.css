@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.logout {
+/* .logout {
   padding: 0.4rem 0.8rem;
   border-radius: 10%;
   background: var(--navbar-color);
@@ -38,7 +38,7 @@
 
 .navbar button {
   color: var(--navbar-foreground);
-}
+} */
 
 .user * {
   margin-left: 1rem;

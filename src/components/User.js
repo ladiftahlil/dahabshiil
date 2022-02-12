@@ -1,11 +1,11 @@
-import React from 'react';
+import { Button } from 'antd'
 
-function User({userimg, username}) {
+function User({ userimg, username }) {
   return (<div className='user'>
-  <img src={userimg} alt='user'/>
-  <span>{username}</span>
-  <button className='logout'>LOGOUT</button>
-</div>);
+    <img src={userimg} alt='user' />
+    <span>{username}</span>
+    <Button type="link" danger>Logout</Button>
+  </div>);
 }
 
 export default User;

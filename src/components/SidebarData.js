@@ -1,36 +1,30 @@
 import React from 'react';
 import * as AiIcons from 'react-icons/ai';
-
+import {DashboardOutlined, FileSearchOutlined, IdcardOutlined, ProfileOutlined} from '@ant-design/icons'
 
 export const SidebarData = [
     {
         title:'Dashboard',
         path: '/',
-        icon: <AiIcons.AiOutlineDashboard/>,
+        icon: <DashboardOutlined />,
         cName: 'nav-text'
     },
     {
         title:'Query',
         path: '/query',
-        icon: <AiIcons.AiOutlineFileSearch/>,
+        icon: <FileSearchOutlined />,
         cName: 'nav-text'
     },
     {
         title:'Register',
         path: '/register',
-        icon: <AiIcons.AiOutlineUserAdd/>,
+        icon: <IdcardOutlined />,
         cName: 'nav-text'
     },
     {
         title:'Profile',
         path: '/profile',
-        icon: <AiIcons.AiOutlineProfile/>,
+        icon: <ProfileOutlined />,
         cName: 'nav-text'
-    },
-    {
-        title:'User',
-        path: '/user',
-        icon: <AiIcons.AiOutlineUserSwitch/>,
-        cName: 'nav-text'
-    },
+    }
 ]

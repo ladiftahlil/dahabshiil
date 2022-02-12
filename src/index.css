@@ -1,6 +1,7 @@
+@import 'antd/dist/antd.css';
 :root {
   --navbar-color: #f7f7f7;
-  --sidebar-color: #4AAA42;
+  --sidebar-color: #1c6615;
   --sidebar-items: #2196f3;
   --navbar-foreground: #101111;
   --blue: #1a83ff;

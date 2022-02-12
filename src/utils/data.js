@@ -1,6 +1,6 @@
 
 const data = {
-    user: {name: 'Abdullahi', img: 'http://localhost:4000/img/profile1.jpg'},
+    user: {name: 'Abdullahi', img: '/rsc/img/profile1.jpg'},
 
 }
 
