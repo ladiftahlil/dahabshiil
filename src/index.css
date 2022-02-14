@@ -1,9 +1,10 @@
 @import 'antd/dist/antd.css';
 :root {
-  --navbar-color: #f7f7f7;
+  --navbar-color: #fafffd;
   --sidebar-color: #1c6615;
   --sidebar-items: #2196f3;
   --navbar-foreground: #101111;
+  --page-background: #f8f8f8;
   --blue: #1a83ff;
   --green: #1aff83;
   --red: #ff1a83;
@@ -25,6 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--page-background);
 }
 
 code {

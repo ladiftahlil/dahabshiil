@@ -1,5 +1,4 @@
 import React from 'react';
-import * as AiIcons from 'react-icons/ai';
 import {DashboardOutlined, FileSearchOutlined, IdcardOutlined, ProfileOutlined} from '@ant-design/icons'
 
 export const SidebarData = [

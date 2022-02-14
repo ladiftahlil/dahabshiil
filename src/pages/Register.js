@@ -1,9 +1,10 @@
-import React from 'react';
+import Registerinvestment from "../components/Registerinvestment";
 
 function Register() {
-  return <div>
-      <h1>REGISTER PAGE</h1>
-  </div>;
+  return <>
+      
+      <Registerinvestment/>
+  </>;
 }
 
 export default Register;

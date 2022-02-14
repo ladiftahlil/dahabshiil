@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 84px;
-  color: var(--navbar-foreground)
+  height: 85px;
+  color: var(--navbar-foreground);
+  border-bottom: 1px solid #e2e2e2;
 }
 
 
