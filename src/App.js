@@ -6,6 +6,8 @@ import Register from './pages/Register';
 import Query from './pages/Query';
 import Profile from './pages/Profile';
 import User from './pages/User';
+import Login from './pages/Login';
+import Admin from './pages/Admin'
 import data from './utils/data'
 import './App.css';
 
@@ -23,6 +25,8 @@ function App() {
               <Route path="/query" element={<Query />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/user" element={<User />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={<Admin />} />
             </Routes>
           </div>
         </div>

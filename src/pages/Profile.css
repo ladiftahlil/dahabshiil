@@ -1,11 +1,27 @@
+
+.profile{
+    margin: 5rem auto;
+}
+.edit-profile{
+    margin-top: 3rem;
+}
 .profile-photo{
+    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    /* background: indigo; */
 }
 .profile-photo img{
     width: 300px;
+    border-radius: 50%;
+}
+.upload{
+    display: grid;
+    gap: 1rem;
+}
+.change-password{
+    /* background: chartreuse; */
+    margin: 3rem auto;
+    max-width: 480px;;
+
 }

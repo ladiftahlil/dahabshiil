@@ -8,7 +8,8 @@
   --blue: #1a83ff;
   --green: #1aff83;
   --red: #ff1a83;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 22;
   min-width: 769px;
   max-width: 1920px;
 }

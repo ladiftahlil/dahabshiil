@@ -1,52 +1,41 @@
 import { useState } from 'react';
-import { Upload } from 'antd';
-import ImgCrop from 'antd-img-crop';
+import { Input, Button } from 'antd'
 
 function Changephoto() {
-    const [fileList, setFileList] = useState([]);
-    const onChange = ({ fileList: newFileList }) => {
-        setFileList(newFileList);
-        console.log(fileList)
+    const [canupload, setCanupload] = useState(true);
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [newimage, setNewimage] = useState({image:'/rsc/defaults/user.jpg'})
+    const fileSelectedHandler = event => {
+        setCanupload(false);
+        setSelectedFile(event.target.files[0]);
+        if (event.target.files && event.target.files[0]) {
+            setNewimage({
+              image: URL.createObjectURL(event.target.files[0])
+            });
+          }
+    };
+    const fileUploadHandler = (event) => {
+        console.log("handling upload; ", selectedFile.name);
     };
 
-    const onPreview = async file => {
-        let src = file.url;
-        if (!src) {
-            src = await new Promise(resolve => {
-                const reader = new FileReader();
-                reader.readAsDataURL(file.originFileObj);
-                reader.onload = () => resolve(reader.result);
-            });
-        }
-        const image = new Image();
-        image.src = src;
-        const imgWindow = window.open(src);
-        imgWindow.document.write(image.outerHTML);
-    };
     return (
-        <div>
+        <div className='edit-profile'>
             <h3>Change profile photo</h3>
             <div className='profile-photo'>
                 <div>
-                    <img src='/rsc/img/profile1.jpg' />
+                    <img src='/rsc/img/profile1.jpg' alt='profile' />
                 </div>
                 <div>
-                    <img src={fileList[0]} />
+                    {/* <img src='https://thispersondoesnotexist.com/image' alt='new profile ' /> */}
+                    <img src={newimage.image} alt='new profile ' />
                 </div>
-                <div>
-                    <ImgCrop rotate>
-                        <Upload
-                            action="/rsc/img/"
-                            listType="picture-card"
-                            fileList={fileList}
-                            onChange={onChange}
-                            onPreview={onPreview}
-                        >
-                            {fileList.length < 1 && '+ Upload'}
-                        </Upload>
-                    </ImgCrop>
+                <div className='upload'>
+                    <Input type='file' onChange={fileSelectedHandler} accept="image/*"/>
+                    <Button type="primary" size='large' style={{ width: '150px' }} onClick={fileUploadHandler} disabled={canupload}>Chnage Profile</Button>
                 </div>
             </div>
+
+
         </div>
 
     );
